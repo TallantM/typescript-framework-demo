@@ -1,45 +1,18 @@
-\# Playwright Demo
+![CI](https://github.com/TallantM/playwright-demo/actions/workflows/ci.yml/badge.svg)
 
+# Playwright Demo
 
+**Playwright + TypeScript + Docker + GitHub Actions CI**
 
-\*\*Reduced test flakiness by 60%\*\* using explicit waits.
+Modern end-to-end testing with Playwright in a Dockerized environment.
 
+## Features
+- Playwright latest + TypeScript
+- Docker build
+- GitHub Actions CI (install, test, build)
+- Headless Chromium execution
 
-
-!\[CI](https://github.com/TallantM/playwright-demo/actions/workflows/playwright.yml/badge.svg)
-
-
-
-\## Features
-
-\- TypeScript E2E tests
-
-\- Explicit waits for reliability
-
-\- Docker support
-
-\- GitHub Actions CI
-
-
-
-\## Run
-
+## Local Run
 ```bash
-
-npm test
-
-docker build -t pw-demo . \&\& docker run pw-demo
-
-
-
-\## Docker
-
-
-
-```bash
-
-docker build -t pw-demo .
-
-docker run pw-demo
-
- 
+npm ci
+npx playwright test
