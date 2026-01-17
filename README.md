@@ -1,18 +1,20 @@
-![CI](https://github.com/TallantM/playwright-demo/actions/workflows/playwright.yml/badge.svg)
+# Playwright TypeScript Demo
 
-# Playwright Demo
+A client project demonstration of automated testing using Playwright with TypeScript, including reusable utilities and a GitHub Actions CI workflow.
 
-**Playwright + TypeScript + Docker + GitHub Actions CI**
+## Prerequisites
+- Node.js 18.0+
+- Git
+- VS Code with TypeScript extension
 
-Modern end-to-end testing with Playwright in a Dockerized environment.
+## Setup
+1. Clone the repo: `git clone https://github.com/TallantM/playwright-demo.git`
+2. Navigate to project: `cd playwright-demo`
+3. Install dependencies: `npm ci`
+4. Install Playwright browsers: `npx playwright install --with-deps`
 
-## Features
-- Playwright latest + TypeScript
-- Docker build
-- GitHub Actions CI (install, test, build)
-- Headless Chromium execution
+## Running Tests Locally
+`npx playwright test`
 
-## Local Run
-```bash
-npm ci
-npx playwright test
+## CI/CD
+GitHub Actions workflow in `.github/workflows/playwright.yml` runs tests on push/pull requests.
