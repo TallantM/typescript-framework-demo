@@ -4,6 +4,6 @@ export default defineConfig({
   testDir: './tests',
   retries: 2,
   reporter: 'html',
-  use: { baseURL: 'https://the-internet.herokuapp.com' },
+  use: { baseURL: 'https://www.saucedemo.com' },
   projects: [ { name: 'chromium', use: { ...devices['Desktop Chrome'] } } ]
 });
