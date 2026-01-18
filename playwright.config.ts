@@ -1,7 +1,7 @@
 import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
-  testDir: './tests',
+  testDir: './tests/e2e',
   retries: 2,
   reporter: 'html',
   use: { baseURL: 'https://www.saucedemo.com' },
