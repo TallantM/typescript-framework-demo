@@ -18,4 +18,3 @@ A client project demonstration of automated testing using Playwright with TypeSc
 
 ## CI/CD
 GitHub Actions workflow in `.github/workflows/playwright.yml` runs tests on push/pull requests.
-
