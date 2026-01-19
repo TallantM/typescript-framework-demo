@@ -23,12 +23,12 @@ jobs:
           context: .
           push: false
           load: true
-          tags: playwright-typescript-demo:latest
+          tags: typescript-framework-demo:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
       
       - name: Run tests in Docker
-        run: docker run playwright-typescript-demo:latest
+        run: docker run typescript-framework-demo:latest
       
       - name: Upload test results
         if: failure()
