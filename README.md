@@ -54,12 +54,15 @@ This repository demonstrates layered testing to highlight automated testing skil
 
 ## Running Tests Locally
 For rapid development, run tests directly on your host (requires host browser installation):
+```bash
 npx playwright install --with-deps
 npx playwright test
-
+```
 For consistency with CI, use Docker (recommended before pushing):
+```bash
 docker build -t typescript-framework-demo .
 docker run typescript-framework-demo
+```
 
 ## CI/CD
 GitHub Actions workflow in `.github/workflows/playwright.yml` builds the Docker image and runs tests exclusively in the container on push/pull requests, ensuring environmental consistency across machines.
