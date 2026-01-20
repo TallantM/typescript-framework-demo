@@ -24,6 +24,7 @@ For Docker setup (if not installed):
 - Ensure the Docker daemon is running: `docker info`
 
 ## Folder Structure
+```text
 typescript-framework-demo/
 ├── .github/
 │   └── workflows/
@@ -43,7 +44,7 @@ typescript-framework-demo/
 ├── package.json            # Dependencies and scripts
 ├── playwright.config.ts    # Playwright configuration
 ├── README.md               # This documentation              # This documentation
-
+```
 
 ## Testing Overview
 This repository demonstrates layered testing to highlight automated testing skills:
